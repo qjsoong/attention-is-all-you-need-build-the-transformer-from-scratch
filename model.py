@@ -38,10 +38,10 @@ def encode_sentence_to_ids(sentence, token_to_id, unk_token='<unk>'):
 
 # Step 4 - decode_ids_to_tokens
 def decode_ids_to_tokens(ids, id_to_token):
-    toks = []
+    tokens = []
     for i in ids:
-        toks.append(id_to_token[i])
-    return toks
+        tokens.append(id_to_token[i])
+    return tokens
 
 # Step 5 - pad_id_sequence
 def pad_id_sequence(ids, max_len, pad_id):
